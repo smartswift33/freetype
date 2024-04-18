@@ -6,9 +6,9 @@
 package truetype
 
 import (
+	"github.com/smartswift33/freetype/raster"
 	"image"
 	"math"
-	"smartswift33/freetype/raster"
 
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"

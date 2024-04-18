@@ -13,10 +13,10 @@ import (
 	"image"
 	"image/draw"
 
+	"github.com/smartswift33/freetype/raster"
+	"github.com/smartswift33/freetype/truetype"
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
-	"smartswift33/freetype/raster"
-	"smartswift33/freetype/truetype"
 )
 
 // These constants determine the size of the glyph cache. The cache is keyed
