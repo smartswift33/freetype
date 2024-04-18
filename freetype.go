@@ -13,10 +13,10 @@ import (
 	"image"
 	"image/draw"
 
-	"github.com/smartswift33/freetype/raster"
-	"github.com/smartswift33/freetype/truetype"
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
+	"smartswift33/freetype/raster"
+	"smartswift33/freetype/truetype"
 )
 
 // These constants determine the size of the glyph cache. The cache is keyed
@@ -123,7 +123,8 @@ const (
 )
 
 func (c *Context) StrAlign(s string, align int) (fixed.Int26_6, error) {
-	max := c.dst.Bounds().Max
+	//max := c.dst.Bounds().Max
+	max := c.clip.Bounds().Max
 	var bounds, words fixed.Int26_6
 
 	if align == ALIGN_CENTER || align == ALIGN_RIGHT { // X
